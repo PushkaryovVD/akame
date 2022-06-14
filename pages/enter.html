@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akame : Вход/Регистрация</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/impcss.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Top Header Area Start -->
+        <div class="top-header-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-5">
+                        <div class="top-header-content">
+                            <p>Добро пожаловать в салон красоты Akame!</p>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="top-header-content text-right">
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> Пн-Сб: 8.00 to 17.00 <span
+                                    class="mx-2"></span> | <span class="mx-2"></span> <i class="fa fa-phone"
+                                    aria-hidden="true"></i> Звоните на номер: <a class="number"
+                                    href="tel:+77713456789">+7(771)-345-6789</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Header Area End -->
+
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="akameNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="../index.html"><img src="../img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="nav">
+                                    <li class="active"><a href="../index.html">Главная</a></li>
+                                    <li><a href="./portfolio.html">Портфолио</a></li>
+                                    <li><a href="./service.html">Услуги</a></li>
+                                    <li><a href="./about.html">О нас</a></li>
+                                    <li><a href="../index.html#news">Новости</a></li>
+                                    <li><a href="./contact.html">Контакты</a></li>
+                                </ul>
+
+                                <!-- Cart Icon 
+                                <div class="cart-icon ml-5 mt-4 mt-lg-0">
+                                    <a href="#"><i class="icon_cart"></i></a>
+                                </div>-->
+
+                                <!-- Book Icon -->
+                                <div class="book-now-btn ml-5 mt-4 mt-lg-0 ml-md-4">
+                                    <a href="./enter.html" class="btn akame-btn">Войти</a>
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <section class="akame-contact-area bg-gray section-padding-80">
+        <div class="container">
+            <div class="row">
+                <!-- Section Heading -->
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <h2>Войти в аккаунт</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-6">
+                        <form action="../php/auth.php" method="post" class="akame-contact-form border-0 p-0">
+                            <h2>Авторизация</h2>
+                            <div class="col-lg-10">
+                                <input type="text" name="alogin" class="form-control mb-30" placeholder="Логин"
+                                    autocomplete="on">
+                            </div>
+                            <div class="col-lg-10">
+                                <input type="password" name="apass" class="form-control mb-30" placeholder="Пароль"
+                                    autocomplete="on">
+                            </div>
+                            <div class="col-8 text-center">
+                                <button type="submit" class="btn akame-btn btn-3 mt-15 active">Авторизация</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-6">
+                    <form action="../php/register.php" method="post" class="akame-contact-form border-0 p-0">
+                        <h2>Регистрация</h2>
+                        <div class="col-lg-10">
+                            <input type="text" name="login" class="form-control mb-30" placeholder="Логин"
+                                autocomplete="on">
+                        </div>
+                        <div class="col-lg-10">
+                            <input type="password" name="password" class="form-control mb-30" placeholder="Пароль"
+                                autocomplete="on">
+                        </div>
+                        <div class="col-8 text-center">
+                            <button type="submit" class="btn akame-btn btn-3 mt-15 active">Регистрация</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+    <!-- Footer Area Start -->
+    <footer class="footer-area section-padding-80-0">
+        <div class="container">
+            <div class="row justify-content-between">
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="single-footer-widget mb-80">
+                        <!-- Footer Logo -->
+                        <a href="#" class="footer-logo"><img src="../img/core-img/logo.png" alt=""></a>
+
+                        <p class="mb-30">Мы будем рады обслужить вас и позволит вам насладиться нашим опытом. Исключение
+                            - случайная встреча с купидоном, которая не произошла.</p>
+
+                        <!-- Copywrite Text -->
+                        <div class="copywrite-text">
+                            <p>
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <div class="single-footer-widget mb-80">
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">Рабочее время</h4>
+
+                        <!-- Open Times -->
+                        <div class="open-time">
+                            <p>Понедельник: Пятница: 10.00 - 23.00</p>
+                            <p>Суббота: 10.00 - 19.00</p>
+                        </div>
+
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-md-4 col-xl-3">
+                    <div class="single-footer-widget mb-80">
+
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">Связаться с нами</h4>
+
+                        <!-- Contact Address -->
+                        <div class="contact-address">
+                            <p>Tel: +7(771) 345 6710</p>
+                            <p>E-mail: akame@gmail.com</p>
+                            <p>Address: Dostyk 77,Almaty</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- All JS Files -->
+    <!-- jQuery -->
+    <script src="../js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="../js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="../js/akame.bundle.js"></script>
+    <!-- Active -->
+    <script src="../js/default-assets/active.js"></script>
+</body>
+
+</html>
